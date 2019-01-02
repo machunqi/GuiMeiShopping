@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>超酷的jQuery带验证登录表单DEMO演示</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../../static/css/login/normalize.min.css">
+    <link rel="stylesheet" href="../../../static/css/login/style.css">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            align-items: center;
+            background: #642B73;
+            background: linear-gradient(to bottom, #C6426E, #642B73);
+            /*font-family: 'Open Sans', sans;*/
+            justify-content: center;
+            -webkit-perspective: 1800px;
+            perspective: 1800px;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .form{
+            position: relative;
+            top: 120px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<div class="form">
+
+    <ul class="tab-group">
+        <li class="tab active"><a href="#login">登录</a></li>
+        <li class="tab"><a href="#signup">注册</a></li>
+
+    </ul>
+
+    <div class="tab-content">
+
+
+        <div id="login">
+            <h1>欢迎登录!</h1>
+
+            <form action="/doSuperuser?action=login" method="post">
+
+                <div class="field-wrap">
+                    <label>
+                        账号<span class="req">*</span>
+                    </label>
+                    <input type="text" name="userLoginName" required autocomplete="off"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        密码<span class="req">*</span>
+                    </label>
+                    <input type="password" name="userPassword" required autocomplete="off"/>
+                </div>
+
+                <p class="forgot"><a href="#">忘记密码?</a></p>
+
+                <button class="button button-block"/>登 录</button>
+
+            </form>
+
+        </div>
+
+
+        <div id="signup">
+            <h1>欢迎注册</h1>
+
+            <form action="/" method="post">
+
+                <div class="top-row">
+                    <div class="field-wrap">
+                        <label>
+                            First Name<span class="req">*</span>
+                        </label>
+                        <input type="text" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Last Name<span class="req">*</span>
+                        </label>
+                        <input type="text"required autocomplete="off"/>
+                    </div>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Email Address<span class="req">*</span>
+                    </label>
+                    <input type="email"required autocomplete="off"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Set A Password<span class="req">*</span>
+                    </label>
+                    <input type="password"required autocomplete="off"/>
+                </div>
+
+                <button type="submit" class="button button-block"/>Get Started</button>
+
+            </form>
+
+        </div>
+
+    </div><!-- tab-content -->
+
+</div> <!-- /form -->
+<script src='../../../static/js/login/jquery.min.js'></script>
+
+<script  src="../../../static/js/login/index.js"></script>
+
+</body>
+</html>

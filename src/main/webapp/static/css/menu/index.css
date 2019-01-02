@@ -1,0 +1,38 @@
+#head,#left1,#left2{
+    background: #43495C;
+}
+#outPage{
+    color: #eeeae9;
+    font-size: 24px;
+}
+#outPage:hover{
+    color: #ee4d45;
+}
+/*右显示区域*/
+#main{
+    position: absolute;
+    width: 72%;
+    height: 92%;
+    left: 260px;
+    top: 65px;
+    border: red 1px solid;
+
+}
+/*信息显示*/
+#context{
+    position: absolute;
+    width: 97%;
+    height: 65%;
+    left: 15px;
+    top: 290px;
+    border: blue 1px solid;
+}
+/*轮播*/
+.bannerWarp{
+    position: relative;
+    top: 5px;
+    height: 98%;
+    width: 1024px;
+    overflow: hidden;
+    margin: auto;
+}
